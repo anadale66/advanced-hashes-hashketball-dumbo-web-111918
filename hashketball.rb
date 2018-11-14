@@ -172,12 +172,11 @@ end
 
 def player_stats(player)
   game_hash.each do |teams,info|
-    info[:players].find do |name, stats|
-      
-    
+    player_found = info[:players].find do |name, stats|
+      name == player 
     end
-
-
+    binding .pry  
+  end
 end
 
 
