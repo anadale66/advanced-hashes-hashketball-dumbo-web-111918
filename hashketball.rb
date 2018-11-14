@@ -172,7 +172,10 @@ end
 
 def player_stats(player)
   game_hash.each do |teams,info|
-    info[:players].find 
+    info[:players].find do |name, stats|
+      
+    
+    end
 
 
 end
