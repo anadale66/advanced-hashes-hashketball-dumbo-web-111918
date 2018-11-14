@@ -160,22 +160,13 @@ def player_numbers(team)
   return all_numbers 
 end
 
-def player_stats(player)
-  game_hash.each do |teams, info| 
-    info[:players].each do |name, stats| 
-      if name == player 
-        return stats 
-      end
-    end
-  end
-end
 
 def player_stats(player)
   game_hash.each do |teams,info|
     player_found = info[:players].find do |name, stats|
       name == player 
     end
-    binding .pry  
+    binding.pry  
   end
 end
 
