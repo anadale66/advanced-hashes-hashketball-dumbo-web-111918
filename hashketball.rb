@@ -170,6 +170,16 @@ def player_stats(player)
   end
 end
 
+def player_stats(player)
+  game_hash.each do |teams,info|
+    info[:players].find 
+
+
+end
+
+
+
+
 def big_shoe_rebounds 
   players_shoes = {}
   game_hash.each do |local, info| 
