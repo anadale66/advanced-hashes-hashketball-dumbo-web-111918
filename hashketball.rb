@@ -166,7 +166,9 @@ def player_stats(player)
     player_found = info[:players].find do |name, stats|
       name == player 
     end
-    binding.pry  
+    if player_found 
+      return player_found[1] 
+    end
   end
 end
 
